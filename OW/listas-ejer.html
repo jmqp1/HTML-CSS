@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Listas OW</title>
+</head>
+<body>
+    <h1>Aircraft Types<br></h1> <!--Headlines 1 + salto de linea-->
+    
+    <ol type="i">   <!--lista ordenada de tipo números romanos-->
+        <li>General Aviation    <!--Primer elemento de la lista -->
+            <ol type="a">       <!--En él  se anida una sublista ordenada alfabéticamente-->
+                <li>Single Aviation Aircraft</li>   <!--Primer elemento de la sublista-->
+                <li>Dual-Engine Aircraft</li> 
+            </ol>   <!--Cierre de la sublista-->   
+        </li>   <!--Cierre del primer elemento de la lista-->
+    
+        <li>Commercial Aviation
+            <ul style="list-style-type: disc">  <!--Viñeta de tipo punto relleno-->
+                <li>Dual Engine</li>
+                <li>Tri-Engine</li>
+            </ul>
+        </li>
+    </ol>
+
+    <ul style="list-style-type: square">    <!--Viñeta de tipo cuadrado-->
+        <li>A
+            <ul style="list-style-type: disc">  <!--Viñeta de tipo punto relleno-->
+                <li>B
+                    <ol>
+                        <li>C</li>
+                        <li>D</li>
+                    </ol>
+                </li>
+                <li>E
+                    <ul>
+                        <li>F</li>
+                        <li>G</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>B</li>
+    </ul>
+
+</body>
+</html>
