@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas OW</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 20px;  <!--para separar todo 20 píxeles de los bordes-->
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio con tablas</h1>
+    <table>
+        <tr>
+            <th></th> <!--Primera celda de la primera fila: vacía. Recordar que "th"=> centrado y bold-->
+            <th colspan="3"><img src="img/120_ipod.png"></th>  <!--de 2ª a 4ª columna unidas-->
+            <th colspan="2"><img src="img/100_ipod.png" width="100px"></th>  <!--de 5ª y 6ª columna unidas-->
+        </tr>
+        <tr>
+            <th>Capacidad</th>
+            <td>2GB</td>
+            <td>4GB</td>
+            <td>8GB</td>
+            <td>32GB</td>
+            <td>2GB</td>
+        </tr>
+        <tr>
+            <th>Colores</th>
+            <td>Blanco</td>
+            <td>
+                <ul style="list-style-type: disc;">
+                    <li>Negro</li>
+                    <li>Rosa</li>
+                    <li>Dorado</li>
+                </ul>
+            </td>
+            <th>Negro</th>
+            <td colspan="2">
+                <ul style="list-style-type: disc;">
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Pantalla</th>
+            <th colspan="3">3 pulgadas</th>
+            <th colspan="2">7 pulgadas</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Tiempo de carga</th>
+            <th rowspan="2" colspan="3">1 hora</th>
+            <th colspan="2">5 horas</th>
+        </tr>
+        <tr>
+            <th colspan="2">30 minutos para 75%</th>
+        </tr>
+    </table>
+</body>
+</html>
