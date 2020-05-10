@@ -1,0 +1,64 @@
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+/* Utilizando únicamente pseudoselectores da color de fondo verde a las casillas que contienen horas 
+La primera celda de cada fila del tbody  */
+tbody tr td:first-child {
+  background-color: green;
+}
+
+/* Utilizando únicamente pseudoselectores da color de fondo amarillo a la celda de recreo. 
+La segunda celda (de tipo TH) de la tercera fila del TBODY*/
+tbody tr:nth-child(3) th:nth-child(2) {
+  background-color: yellow;
+}
+
+/* Cambiar los estado de los enlaces para que:
+
+ Nunca estén subrayados
+ Si están visitados se muestren en rojo
+ Si no están visitados se muestren en verde */
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+/* Utilizando pseudoselectores hacer que cuando pasemos el ratón sobre la columna del viernes
+aumente el tamaño de letra al doble 
+Última celda de cada fila (tanto de los TD del body como de los TH del head)*/
+
+tr th:last-child:hover,
+tr td:last-child:hover {
+  font-size: 2em;
+}
+
+/* Utilizando Pseudoelementos Haz que la primera letra de los días tenga el doble de tamaño
+Primera letra de las celdas TH que se encuentran en la única fila del THEAD*/
+thead tr th::first-letter {
+  font-size: 2em;
+}
+
+/* Añade un borde rojo que esté separado 10 px a los campos obligatorios */
+input:required {
+  border: 1px solid red;
+  padding: 10px;
+}
+/* Añade un * en rojo detrás de cada etiqueta */
+label::after {
+  color: red;
+  content: "*";
+}

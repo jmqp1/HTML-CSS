@@ -1,0 +1,45 @@
+a:link {
+  color: red;
+  text-decoration: none;
+}   /* Enlaces sin visitar van a tener el color ROJO */
+
+a:hover {
+  color: green;
+}   /* Cuando pasamos el ratón por encima de un enlace cambia el color a VERDE */
+
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}   /* Los enlaces visitados en color AZUL */
+
+li:first-child {
+  background-color: grey;
+}   /* Los LI qye son primer hijo de cada lista tendrán color de fondo GRIS  */
+
+ul:first-of-type li:last-child {
+  background-color: blue;
+  color: white;
+}   /* El último hijo LI de la primera lista no ordenada tendrá color de fondo AZUL y color de letra BLANCO */
+
+ul:last-of-type {
+  border: 1px solid black;
+}   /* La última lista no ordenada tendrá un borde de color negro de 1 px */
+
+ul:last-of-type li:nth-child(2) {
+  color: orange;
+}   /* Al LI que es segundo hijo de la última lista no ordenada le daremos color de letra NARANJA */
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}   /* A la primera letra de los párrafos les aumento el tamaño y las coloreo de rojo */
+
+p::first-line {
+  font-size: 1.2em;
+  color: rgb(111, 111, 207);
+}   /* A la primera línea del párrafo aumento un poco el tamaño y las coloreo de morado */
+
+p::after {
+  content: "FIN";
+  border: 1px solid green;
+}   /* Después de los párrafos añado contenido "FIN" y le doy borde coloreado a ese añadido */
